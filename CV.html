@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV Alice Borie</title>
+	<link href="CV.css" type="text/css" rel="stylesheet" >
+	<body>
+
+		<header class="header">
+			<!-- barre des tâches -->
+			<section class="topnav" id="myTopnav">
+			  <a href="#">Accueil</a>
+			  <a href="#comp">Mes compétences</a>
+			  <a href="#inte">Mes centres d'intérêt</a>
+			  <a href="#contact">Contact</a>
+			  <!-- si click sur l'icone à droite, appel de la fonction -->
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			   <img class="icon_left" src="img/nav.png">
+			  </a>
+			</section>
+			<!--utilisation du javascript qui récupère la valeur de myTopnav pour l'adapter en responsive (quand l'écran se rétrécit) -->
+			<script>
+				function myFunction() {
+				  var x = document.getElementById("myTopnav");
+				  if (x.className === "topnav") {
+				    x.className += "responsive";
+				  } else {
+				    x.className = "topnav";
+				  }
+				}
+			</script>
+			<!-- image -->
+			<section id="fond">
+				<img src="img/fond.jpg">
+		   	</section>
+		</header>
+
+		<h3 id="comp">Mes compétences</h3>
+		<section class="text_comp" >
+		    <section class="aside" >
+		    	<h2>Mes expériences professionnelles</h2>
+				<strong>Maas Holding GmbH, Filderstadt (Allemagne)</strong></br>
+				2019</br>
+				Stage de 5 semaines en tant quh2e fullstack developer
+
+				</br></br>
+				<strong>Bosch Mondeville, Caen (France)</strong></br>
+				2018</br>
+				Stage de 5 semaines sur site de production de dépose de composants sur platines électroniques
+
+				</br></br>
+				<strong>Chateau Hôtel Mont Royal, La Chapelle (France)</strong></br>
+				Etés 2015-2018 et en temps partiel pendant l'année</br>
+				Femme de chambre en hôtel 5 étoiles
+			</section>
+			<section class="aside" >
+			    <h2>Mon cursus scolaire</h2>
+				<strong>ECE Paris</strong></br>
+				2016 - 2021</br>
+				Actuellement en 2ème année du cycle ingénieur
+
+				</br></br>
+				<strong>Université Picardie Jules Vernes, Amiens</strong></br>
+				2014 - 2015</br>
+				PACES
+
+				</br></br>	
+				<strong>Lycée J. Rostand, Chantilly</strong></br>
+				Bac S SVT mention AB</br>
+				Section européenne allemand
+		    </section>
+		</section>
+		<!-- gestion des images et du texte -->
+		<h3 id="inte">Mes centres d'intérêt</h3>
+		<section id="conteneur">
+			<section class="centre" >
+					<img class="image" src="img/voile.jpg">
+					<!--GIF-->
+					<img class="image" src="img/voile3.gif">
+					<p class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+			<section class="centre">
+					<img class="image_trip" src="img/busan.jpg">
+					<img class="image_trip" src="img/jeonju.jpg">
+					<img class="image_trip" src="img/jeonju2.jpg">
+			</section>
+			<section class="centre">
+					<img class="image" src="img/photo.jpg">
+					<img class="image" src="img/violon.jpg">
+			</section>	
+		</section>
+		<section id="contact" >
+			<h3>Mon contact</h3>
+			<!-- formulaire de conact -->
+			<form class="container">
+				<label>Nom</label>
+				<input type="text" required name="Nom">
+				<label>Email</label>
+				<input type="email" required name="Email">
+				<label>Message</label>
+				<input type="textarea"  required name="Message" placeholder="Write something.." style="height:200px"> 
+				<input type="submit" value="Envoyer"></br></br></br>
+			</form><br>
+		</section>	
+	</body>
+	<!--bas de page avec les endroit où écrire en lien-->
+	<footer class="footer">
+		<p>Vous pouvez aussi me contacter par mail ou sur Linkedin : </p>
+		<a href="mailto:alice.borie@edu.ece.fr">Mail</a>
+		<a href="https://www.linkedin.com/feed/?trk=uno-choose-home"><img src="img/image1.jpg" id="lin"></a>
+	</footer>
+</html>
